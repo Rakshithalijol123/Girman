@@ -7,7 +7,7 @@
  - FastAPI for Backend
  - MongoDB for Database
    
-First, run the Next.Js application:
+## First, run the Next.Js application:
 
 ### npm run dev
 or
@@ -17,7 +17,7 @@ or
 or
 ### bun dev
 
-Then, run the FastAPI application in another Terminal:
+## Then, run the FastAPI application in another Terminal:
 
 ### pip install fastapi uvicorn pymongo
 ### pip install pydantic
