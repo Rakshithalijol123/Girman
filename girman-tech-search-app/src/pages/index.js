@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
@@ -19,7 +20,7 @@ export default function Home() {
       <nav className="bg-grey-600 p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
         <a href="http://girmantech.com" className="flex items-center">
-            <img src="logo.png" alt="Girman Tech" className="h-12 rounded" />
+            <Image src="logo.png" alt="Girman Tech" className="h-12 rounded" />
           </a>
           <div className="space-x-4">
           <a href="http://girmantech.com" className="text-blue-500 hover:font-bold">Website</a>
@@ -32,7 +33,7 @@ export default function Home() {
       {/* Search Bar */}
       <div className="container mx-auto p-6">
         <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <img src="logo.png" alt="Girman Tech" className="h-20 m-2" />
+        <Image src="logo.png" alt="Girman Tech" className="h-20 m-2" />
           <input
             type="text"
             placeholder="Search for a user..."
