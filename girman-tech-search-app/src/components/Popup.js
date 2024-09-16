@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Popup = ({ user, onClose }) => {
   if (!user) return null;
@@ -17,7 +18,7 @@ const Popup = ({ user, onClose }) => {
 
         {/* User Details */}
         <div className="flex items-center mb-4">
-          <img
+          <Image
             src={user.profile_picture || 'pic.jpg'}
             alt={`${user.first_name} ${user.last_name}`}
             className="w-20 h-20 rounded-full mr-4"
