@@ -21,7 +21,7 @@ export default function Results() {
             setUsers([]);
           } else {
             setUsers(data);
-            setError(&quot;&quot;);
+            setError();
           }
         })
         .catch((err) => setError(&quot;Failed to fetch data.&quot;));
