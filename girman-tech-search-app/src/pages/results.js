@@ -7,7 +7,7 @@ export default function Results() {
   const router = useRouter();
   const { query } = router.query;
   const [users, setUsers] = useState([]);
-  const [error, setError] = useState(&quot;&quot;);
+  const [error, setError] = useState();
   const [selectedUser, setSelectedUser] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
