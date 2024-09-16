@@ -75,7 +75,7 @@ export default function Results() {
           <div className="flex flex-col items-center justify-center min-h-[300px]">
             <Image
               src="/images/no-results.png"
-              alt="No Results"
+              alt=&quot;No Results&quot
               className="w-48 h-auto"
             />
             <p className="mt-4 text-gray-600">No results found</p>
