@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import Popup from '../components/Popup'; // Import the Popup component
+import Popup from '../components/Popup';
 import Image from 'next/image';
 
 export default function Results() {
@@ -75,7 +75,7 @@ export default function Results() {
           <div className="flex flex-col items-center justify-center min-h-[300px]">
             <Image
               src="/images/no-results.png"
-              alt=&quot;No Results&quot
+              alt="No-Results"
               className="w-48 h-auto"
             />
             <p className="mt-4 text-gray-600">No results found</p>
