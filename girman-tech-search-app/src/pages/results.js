@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Popup from '../components/Popup'; // Import the Popup component
+import Image from 'next/image';
 
 export default function Results() {
   const router = useRouter();
@@ -48,7 +49,7 @@ export default function Results() {
         {users.length > 0 ? (
           users.map((user) => (
             <div key={user.id} className="bg-white p-4 rounded-lg shadow-lg flex flex-col">
-              <img
+              <Image
                 src={user.profile_picture || 'pic.jpg'}
                 alt={`${user.first_name} ${user.last_name}`}
                 className="w-16 h-16 rounded-full mb-4 mx-auto"
@@ -72,7 +73,7 @@ export default function Results() {
           ))
         ) : (
           <div className="flex flex-col items-center justify-center min-h-[300px]">
-            <img
+            <Image
               src="/images/no-results.png"
               alt="No Results"
               className="w-48 h-auto"
