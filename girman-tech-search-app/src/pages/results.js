@@ -44,7 +44,7 @@ export default function Results() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-2xl font-bold mb-4 text-center">Search Results for "{query}"</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">Search Results for `${query}`</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {users.length > 0 ? (
           users.map((user) => (
